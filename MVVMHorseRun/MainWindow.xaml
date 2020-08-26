@@ -1,0 +1,140 @@
+﻿<Window x:Class="MVVMHorseRun.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMHorseRun"
+        xmlns:viewmodels="clr-namespace:MVVMHorseRun.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Window.DataContext>
+        <viewmodels:MainViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <BeginStoryboard x:Key="race">
+            <Storyboard FillBehavior="Stop">
+                <!--Run Progress-->
+                <DoubleAnimation Duration="{Binding Riders.LuckyBell.Time, UpdateSourceTrigger=PropertyChanged, Converter={x:Static local:DoubleToDurationConverter.Instance}}" 
+                                 From="0" To="{Binding ActualWidth, ElementName=luckyBellEmpty, UpdateSourceTrigger=PropertyChanged}"
+                                 Storyboard.TargetName="luckyBellProgress" Storyboard.TargetProperty="Width"/>
+
+                <DoubleAnimation Duration="{Binding Riders.SweetFate.Time, UpdateSourceTrigger=PropertyChanged, Converter={x:Static local:DoubleToDurationConverter.Instance}}" 
+                                 From="0" To="{Binding ActualWidth, ElementName=luckyBellEmpty, UpdateSourceTrigger=PropertyChanged}"
+                                 Storyboard.TargetName="sweetFateProgress" Storyboard.TargetProperty="Width"/>
+                <DoubleAnimation Duration="{Binding Riders.MrKentucky.Time, UpdateSourceTrigger=PropertyChanged, Converter={x:Static local:DoubleToDurationConverter.Instance}}" 
+                                 From="0" To="{Binding ActualWidth, ElementName=luckyBellEmpty, UpdateSourceTrigger=PropertyChanged}"
+                                 Storyboard.TargetName="mrKentuckyProgress" Storyboard.TargetProperty="Width"/>
+                <DoubleAnimation Duration="{Binding Riders.FreshSpice.Time, UpdateSourceTrigger=PropertyChanged, Converter={x:Static local:DoubleToDurationConverter.Instance}}" 
+                                 From="0" To="{Binding ActualWidth, ElementName=luckyBellEmpty, UpdateSourceTrigger=PropertyChanged}"
+                                 Storyboard.TargetName="freshSpiceProgress" Storyboard.TargetProperty="Width"/>
+                <DoubleAnimation Duration="{Binding Riders.Bluegrass.Time, UpdateSourceTrigger=PropertyChanged, Converter={x:Static local:DoubleToDurationConverter.Instance}}" 
+                                 From="0" To="{Binding ActualWidth, UpdateSourceTrigger=PropertyChanged, ElementName=luckyBellEmpty}"
+                                 Storyboard.TargetName="blueGrassProgress" Storyboard.TargetProperty="Width"/>
+                <!--After Completion-->
+            </Storyboard>
+        </BeginStoryboard>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <!--content-->
+        <Border Grid.Row="0" RenderTransformOrigin="0.5, 0.5">
+            <Grid Margin="10,50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Riders-->
+                <!--Lucky Bell-->
+                <Border x:Name="luckyBellEmpty" Grid.Row="0" CornerRadius="10" Background="#bbb"/>
+                <Border x:Name="luckyBellProgress" Grid.Row="0" CornerRadius="10" Background="#0d0" Opacity="0.6"  HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="0" HorizontalAlignment="Left" Text="{Binding Riders.LuckyBell.Name}" Foreground="#fff" VerticalAlignment="Center" FontSize="14" Margin="10,0,0,0"></TextBlock>
+                <Border x:Name="luckyBellWinner" CornerRadius="10" Background="#0d0" Opacity="0.0">
+                    <TextBlock Text="{Binding Riders.LuckyBell.Name}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <!--Sweet Fate-->
+                <Border Grid.Row="1" CornerRadius="10" Background="#bbb"/>
+                <Border x:Name="sweetFateProgress" Grid.Row="1" CornerRadius="10" Background="#0d0" Opacity="0.6"  HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="1" HorizontalAlignment="Left" Text="{Binding Riders.SweetFate.Name}" Foreground="#fff" VerticalAlignment="Center" FontSize="14" Margin="10,0,0,0"></TextBlock>
+                <Border x:Name="sweetFateWinner" CornerRadius="10" Background="#0d0" Opacity="0.0">
+                    <TextBlock Text="{Binding Riders.SweetFate.Name}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <!--Mr. Kentucky-->
+                <Border Grid.Row="2" CornerRadius="10" Background="#bbb"/>
+                <Border x:Name="mrKentuckyProgress" Grid.Row="2" CornerRadius="10" Background="#0d0" Opacity="0.6"  HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="2" HorizontalAlignment="Left" Text="{Binding Riders.MrKentucky.Name}" Foreground="#fff" VerticalAlignment="Center" FontSize="14" Margin="10,0,0,0"></TextBlock>
+                <Border x:Name="mrKentuckyWinner" CornerRadius="10" Background="#0d0" Opacity="0.0">
+                    <TextBlock Text="{Binding Riders.MrKentucky.Name}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <!--Fresh Spice-->
+                <Border Grid.Row="3" CornerRadius="10" Background="#bbb"/>
+                <Border x:Name="freshSpiceProgress" Grid.Row="3" CornerRadius="10" Background="#0d0" Opacity="0.6"  HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="3" HorizontalAlignment="Left" Text="{Binding Riders.FreshSpice.Name}" Foreground="#fff" VerticalAlignment="Center" FontSize="14" Margin="10,0,0,0"></TextBlock>
+                <Border x:Name="freshSpiceWinner" CornerRadius="10" Background="#0d0" Opacity="0.0">
+                    <TextBlock Text="{Binding Riders.FreshSpice.Name}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <!--Bluegrass-->
+                <Border Grid.Row="4" CornerRadius="10" Background="#bbb"/>
+                <Border x:Name="blueGrassProgress" Grid.Row="4" CornerRadius="10" Background="#0d0" Opacity="0.6"  HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="4" HorizontalAlignment="Left" Text="{Binding Riders.Bluegrass.Name}" Foreground="#fff" VerticalAlignment="Center" FontSize="14" Margin="10,0,0,0" ></TextBlock>
+                <Border x:Name="blueGrassWinner" CornerRadius="10" Background="#0d0" Opacity="0.0">
+                    <TextBlock Text="{Binding Riders.Bluegrass.Name}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Border>
+            </Grid>
+            <Border.LayoutTransform >
+                <RotateTransform Angle="{Binding Angle.Angle, UpdateSourceTrigger=PropertyChanged}"/>
+            </Border.LayoutTransform>
+        </Border>
+        <!--Conrols-->
+        <Border Grid.Row="1" CornerRadius="5" Margin="5" BorderThickness="1" BorderBrush="#888">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#fff" Offset="0.0"/>
+                    <GradientStop Color="#0f0" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Rotation:" VerticalAlignment="Center"/>
+                <!--Slider-->
+                <Slider x:Name="slider" Grid.Column="1"
+                    Height="20" Width="100" Margin="5" 
+                    Minimum="-90" Maximum="90" TickFrequency="1" IsSnapToTickEnabled="True"
+                    Value="{Binding Angle.Angle, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                <!--Slider Value Text-->
+                <TextBlock Grid.Column="2" Text="{Binding Angle.Angle}" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="3" Text=" degrees" VerticalAlignment="Center"/>
+                <!--Start new Race Button-->
+                <Button Grid.Column="5" Height="20" Width="100" 
+                        Content="Start New Race" 
+                        Margin="5" BorderThickness="0" Foreground="#00f" 
+                        Background="Transparent" Command="{Binding Riders.SetTimeCommand}">
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="LostMouseCapture">
+                            <StaticResource ResourceKey="race"></StaticResource>
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+                
+
+            </Grid>
+        </Border>
+    </Grid>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <StaticResource ResourceKey="race"/>
+        </EventTrigger>
+    </Window.Triggers>
+</Window>

@@ -1,0 +1,32 @@
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\bin\Debug\MVVMHorseRun.exe.config
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\bin\Debug\MVVMHorseRun.exe
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\bin\Debug\MVVMHorseRun.pdb
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.csprojAssemblyReference.cache
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MainWindow.g.cs
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\App.g.cs
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun_MarkupCompile.cache
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun_MarkupCompile.lref
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MainWindow.baml
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.g.resources
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.Properties.Resources.resources
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.csproj.GenerateResource.cache
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.csproj.CoreCompileInputs.cache
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.exe
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.pdb
+C:\DevEnv\C#\WPF\2020.04.10 HorseRun\MVVMHorseRun\MVVMHorseRun\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\bin\Debug\MVVMHorseRun.exe.config
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\bin\Debug\MVVMHorseRun.exe
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\bin\Debug\MVVMHorseRun.pdb
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\App.g.cs
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun_MarkupCompile.cache
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun_MarkupCompile.lref
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.g.resources
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.Properties.Resources.resources
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.exe
+C:\Users\Administrator\Downloads\MVVMHorseRun_1586710788\MVVMHorseRun\MVVMHorseRun\obj\Debug\MVVMHorseRun.pdb
